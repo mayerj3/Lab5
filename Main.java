@@ -15,8 +15,20 @@ class Main {
     student2.setMajor("Information Systems");
     student2.print();
 
-    
+    double sum = 0;
+
        
+    ArrayList<Double> gpas = new ArrayList<Double>();
+    gpas.add(student1.getGPA());
+    gpas.add(student2.getGPA());
+
+    for(int i=0; i<gpas.size();i++)
+    {
+      sum+=gpas.get(i);
+
+    }
+    System.out.println("The average GPA is: " +(sum/gpas.size()));
+
   }
 }
 
