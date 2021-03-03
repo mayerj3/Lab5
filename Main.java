@@ -1,19 +1,32 @@
 import java.util.ArrayList;
 
+
 class Main {  
   public static void main(String[] args) {    
     Student student1 = new Student();    
     student1.setName("Arnold Spielberg");    
     student1.setGPA(4.0);    
     student1.setMajor("Electrical Engineering");
+    student1.print();
 
-    System.out.println("student1's name is " + student1.getName() + " and their GPAis " + student1.getGPA() + " and their major is " + student1.getMajor());
+    Student student2 = new Student();
+    student2.setName("John Mayer");
+    student2.setGPA(4.3);
+    student2.setMajor("Information Systems");
+    student2.print();
+
+    
+       
   }
 }
+
+
 class Student {  
   String name;  
   double gpa;  
   String major;
+
+  
 
   String getName() {    
     return name;  
@@ -32,4 +45,10 @@ class Student {
   void setMajor(String theMajor) {    
     major = theMajor; 
   }
+  void print(){
+    System.out.println("The students name is " + name);
+    System.out.println("The students GPA is " + gpa);
+    System.out.println("The students Major is " + major);
+  }
+  
 }
