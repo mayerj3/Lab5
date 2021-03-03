@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Main {  
   public static void main(String[] args) {    
     Student student1 = new Student();    
@@ -7,6 +9,7 @@ class Main {
 
     System.out.println("student1's name is " + student1.getName() + " and their GPAis " + student1.getGPA() + " and their major is " + student1.getMajor());
   }
+
   class Student {  
     String name;  
     double gpa;  
